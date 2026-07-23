@@ -5,12 +5,16 @@ import (
 	"net/http"
 )
 
-func handler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Hello from multi-stage build demo!")
-}
-
 func main() {
-	http.HandleFunc("/", handler)
-	fmt.Println("Server running on :8080")
-	http.ListenAndServe(":8080", nil)
+	http.HandleFunc("/", HomeHandler)
+	http.HandleFunc("/health", HealthHandler)
+	http.HandleFunc("/version", VersionHandler)
+	http.HandleFunc("/time", TimeHandler)
+
+	fmt.Println("Server started on port 8080")
+
+	err := http.ListenAndServe(":8080", nil)
+	if err != nil {
+		panic(err)
+	}
 }
