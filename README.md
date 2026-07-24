@@ -291,6 +291,6 @@ By implementing Docker Multi-Stage Builds:
 # Author
 
 **Manoj Selvan G**
-linkedin.com/in/manojselvang/
+https://www.linkedin.com/in/manojselvang/ 
 manojselvang@gmail.com
 If you found this project useful, consider giving it a ⭐ on GitHub.
