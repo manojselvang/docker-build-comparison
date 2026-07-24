@@ -167,6 +167,6 @@ docker history go-multi-stage:v1
 
 # Author
 
-**Manoj Selvan**
-
-Senior DevOps Engineer
+**Manoj Selvan G**
+linkedin.com/in/manojselvang/
+manojselvang@gmail.com
