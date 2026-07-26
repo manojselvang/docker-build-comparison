@@ -12,6 +12,8 @@ Traditional Docker builds often package everything required during developmentâ€
 
 This project demonstrates how **Docker Multi-Stage Builds** create lightweight, production-ready images by separating the build environment from the runtime environment.
 
+![Project Structure](project-screenshots/project-structure.png)
+
 Using the **same Go REST API**, this project compares:
 
 - Traditional Single-Stage Docker Build
